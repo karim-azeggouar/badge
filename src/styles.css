@@ -16,4 +16,8 @@
 .badge .ofppt-logo{display:block;width:70px;height:46px;object-fit:contain}
 .badge .badge-year{position:absolute;right:0;top:2px}
 
+/* Centrage fixe dans l'aperçu et dans l'image PNG exportée. */
+.badge .photo-wrap{position:relative;left:50%;transform:translateX(-50%);margin-left:0;margin-right:0}
+.badge .photo-wrap img{display:block;object-position:center center}
+
 .brand-logo{width:36px;height:36px;object-fit:contain;background:#fff;border-radius:50%;padding:2px}
