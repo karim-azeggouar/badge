@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import QRCode from 'qrcode'
 import { toPng } from 'html-to-image'
+import logo from '../logo.png'
 import './styles.css'
 
 const initial = {
@@ -59,7 +60,7 @@ function App() {
 
   return <main className="app-shell">
     <section className="intro">
-      <div className="brand"><img className="brand-logo" src="/logo.png" alt="Logo OFPPT"/><span>PORTFOLIO<br/><b>BADGE</b></span></div>
+      <div className="brand"><img className="brand-logo" src={logo} alt="Logo OFPPT"/><span>PORTFOLIO<br/><b>BADGE</b></span></div>
       <p className="eyebrow">GÉNÉRATEUR DE BADGE</p>
       <h1>Votre portfolio<br/><em>en un scan.</em></h1>
       <p className="lead">Créez un badge personnel avec votre photo et un QR code qui redirige directement vers votre portfolio.</p>
@@ -84,7 +85,7 @@ function App() {
         <p className="eyebrow">APERÇU DU BADGE</p>
         <div className="badge-shadow">
           <article className="badge" ref={cardRef}>
-            <div className="badge-top"><img className="ofppt-logo" src="/logo.png" alt="Logo OFPPT"/><span className="badge-year">ISTA NTIC-TANGER</span></div>
+            <div className="badge-top"><img className="ofppt-logo" src={logo} alt="Logo OFPPT"/><span className="badge-year">ISTA NTIC-TANGER</span></div>
             <div className="photo-wrap">{photo ? <img src={photo} alt="Profil"/> : <div className="avatar">{(data.name.trim()[0] || 'P').toUpperCase()}</div>}</div>
             <h3>{data.name || 'VOTRE NOM'}</h3><div className="accent"></div>
             <div className="meta"><span>GROUPE</span><b>{data.className || '—'}</b></div>
