@@ -21,3 +21,22 @@
 .badge .photo-wrap img{display:block;object-position:center center}
 
 .brand-logo{width:36px;height:36px;object-fit:contain;background:#fff;border-radius:50%;padding:2px}
+
+@media (max-width:460px){
+  .intro{min-height:auto;padding:28px 22px 32px}
+  .intro .eyebrow{margin-top:52px}
+  .intro h1{font-size:38px}
+  .lead{font-size:13px;line-height:1.65}
+  .steps{margin-top:34px;gap:7px;font-size:8px}
+  .steps b{font-size:9px}
+  .steps i{width:14px}
+  .workspace{padding:32px 18px}
+  .form-grid{grid-template-columns:1fr}
+  .wide{grid-column:auto}
+  .panel-title{display:block;margin-bottom:24px}
+  .panel-title h2{font-size:23px}
+  .live{display:block;margin-top:12px}
+  .download span{display:none}
+  .badge-shadow{padding:7px;border-radius:18px}
+  .badge{width:min(270px,calc(100vw - 50px));min-height:500px;padding-left:23px;padding-right:23px}
+}
